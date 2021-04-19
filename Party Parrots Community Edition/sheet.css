@@ -1,10 +1,95 @@
+input[type="text"]{
+
+}
+
+input[type="number"]{
+   
+}
+
+input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button{
+    -moz-appearance: textfield;
+}
+
+
+
+/*----MAIN----*/
 .sheet-main{
-    max-width: 900px;
+    max-width: 800px;
     display: grid;
-    grid-template-columns: 450px 450px;
+    grid-template-columns: 200px 300px 300px;
     grid-template-rows: auto;
+    gap: 5px;
     grid-template-areas: "logo logo logo"
                          "bio bio bio"
                          "ability stats stats"
-                         "ability inventory attack";
+                         "ability inventory attacks";
+}
+
+
+/*----LOGO----*/
+.sheet-logo{
+    grid-area: logo;
+}
+
+/*----BIO----*/
+.sheet-bio{
+    grid-area: bio;
+    border: solid;
+}
+
+/*----ABILITY----*/
+.sheet-ability{
+    grid-area: ability;
+    border: solid;
+}
+
+.ability{
+    display: grid;
+    grid-template-columns: 100px 30px 30px 30px;
+    grid-template-rows: auto;
+    column-gap: 2px;
+    grid-template-areas: "label ability ability-temp button";
+    padding: 5px;
+}
+
+label[class="ability"]{
+    grid-area: label;
+}
+
+input[type="number"].ability-input{
+    grid-area: ability;
+    width: 30px !important;
+}
+
+input[type="number"].ability-temp-input{
+    grid-area: ability-temp;
+    width: 30px !important;
+}
+
+button[type="roll"].ability-button{
+    grid-area: button;
+}
+
+
+/*----STATS----*/
+.sheet-stats{
+    grid-area: stats;
+    border: solid;
+}   
+
+/*----INVENTORY----*/
+.sheet-inventory{
+    grid-area: inventory;
+    border: solid;
+}
+
+/*----ATTACKS----*/
+.sheet-attacks{
+    grid-area: attacks;
+    border: solid;
 }

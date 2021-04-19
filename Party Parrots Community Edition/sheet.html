@@ -1,15 +1,72 @@
 <div class="sheet-main">
 
-    <div class="sheet-logo"></div>
+    <div class="sheet-logo">
+        Party Parrots
+    </div>
 
-    <div class="sheet-bio"></div>
+    <div class="sheet-bio">
+        <input class="nome" name="attr_nome" placeholder="Nome" type="text" value="">
+        <input class="specie" name="attr_specie" placeholder="Specie" type="text" value="">
+        <input class="sesso" name="attr_sesso" placeholder="Sesso" type="text" value="">
+        <input class="taglia" name="attr_taglia" placeholder="Taglia" type="text" value="">
+        <input class="colori" name="attr_colori" placeholder="Colori" type="text" value="">
+    </div>
 
-    <div class="sheet-ability"></div>
+    <div class="sheet-ability">
+        <div class="ability">
+            <label class="cattiveria ability-label">Cattiveria</label>
+            <input class="cattiveria ability-input" name="attr_cattiveria" type="number" value="">
+            <input class="cattiveria ability-temp-input" name="attr_cattiveria-temp" type="number" value="">
+            <button class="cattiveria ability-button" name="roll_cattiveria" type="roll" value="&{template:default} {{name=Cattiveria}} {{personaggio=@{nome}}} {{Tiro=[[1d6+@{cattiveria}+@{cattiveria-temp}]]}}"></button>
+        </div>
 
-    <div class="sheet-stats"></div>
+        <div class="ability">
+            <label class="simpatia ability-label">Simpatia</label>
+            <input class="simpatia ability-input" name="attr_simpatia" type="number" value="">
+            <input class="simpatia ability-temp-input" name="attr_simpatia-temp" type="number" value="">
+            <button class="simpatia ability-button" name="roll_simpatia" type="roll" value="&{template:default} {{name=Simpatia}} {{personaggio=@{nome}}} {{Tiro=[[1d6+@{simpatia}+@{simpatia-temp}]]}}"></button>
+        </div>
 
-    <div class="sheet-inventory"></div>
+        <div class="ability">
+            <label class="intelligenza ability-label">Intelligenza</label>
+            <input class="intelligenza ability-input" name="attr_intelligenza" type="number" value="">
+            <input class="intelligenza ability-temp-input" name="attr_intelligenza-temp" type="number" value="">
+            <button class="intelligenza ability-button" name="roll_intelligenza" type="roll" value="&{template:default} {{name=Intelligenza}} {{personaggio=@{nome}}} {{Tiro=[[1d6+@{intelligenza}+@{intelligenza-temp}]]}}"></button>
+        </div>
 
-    <div class="sheet-attacks"></div>
+        <div class="ability">
+            <label class="bellezza ability-label">Bellezza</label>
+            <input class="bellezza ability-input" name="attr_bellezza" type="number" value="">
+            <input class="bellezza ability-temp-input" name="attr_bellezza-temp" type="number" value="">
+            <button class="bellezza ability-button" name="roll_bellezza" type="roll" value="&{template:default} {{name=Bellezza}} {{personaggio=@{nome}}} {{Tiro=[[1d6+@{bellezza}+@{bellezza-temp}]]}}"></button>
+        </div>
+
+        <div class="ability">
+            <label class="parlantina ability-label">Parlantina</label>
+            <input class="parlantina ability-input" name="attr_parlantina" type="number" value="">
+            <input class="parlantina ability-temp-input" name="attr_parlantina-temp" type="number" value="">
+            <button class="parlantina ability-button" name="roll_parlantina" type="roll" value="&{template:default} {{name=Parlantina}} {{personaggio=@{nome}}} {{Tiro=[[1d6+@{parlantina}+@{parlantina-temp}]]}}"></button>
+        </div>
+
+        <div class="ability">
+            <label class="agilità ability-label">Agilità</label>
+            <input class="agilità ability-input" name="attr_agilità" type="number" value="">
+            <input class="agilità ability-temp-input" name="attr_agilità-temp" type="number" value="">
+            <button class="agilità ability-button" name="roll_agilità" type="roll" value="&{template:default} {{name=Agilità}} {{personaggio=@{nome}}} {{Tiro=[[1d6+@{agilità}+@{agilità-temp}]]}}"></button>
+        </div>
+
+    </div>
+
+    <div class="sheet-stats">
+
+    </div>
+
+    <div class="sheet-inventory">
+
+    </div>
+
+    <div class="sheet-attacks">
+
+    </div>
 
 </div>
