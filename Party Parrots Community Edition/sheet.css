@@ -1,0 +1,10 @@
+.sheet-main{
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: auto;
+    grid-template-areas: "logo logo logo"
+                         "bio bio bio"
+                         "ability stats stats"
+                         "ability inventory attack";
+}
