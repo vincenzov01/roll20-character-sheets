@@ -1,15 +1,19 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
 <div class="sheet-main">
 
     <div class="sheet-logo">
-        Party Parrots
+        <label class="logo">Party Parrots</label>
     </div>
 
     <div class="sheet-bio">
-        <input class="nome" name="attr_nome" placeholder="Nome" type="text" value="">
-        <input class="specie" name="attr_specie" placeholder="Specie" type="text" value="">
-        <input class="sesso" name="attr_sesso" placeholder="Sesso" type="text" value="">
-        <input class="taglia" name="attr_taglia" placeholder="Taglia" type="text" value="">
-        <input class="colori" name="attr_colori" placeholder="Colori" type="text" value="">
+        <div class="bio-container">
+            <input class="nome bio" name="attr_nome" placeholder="Nome" type="text" value="">
+            <input class="specie bio" name="attr_specie" placeholder="Specie" type="text" value="">
+            <input class="sesso bio" name="attr_sesso" placeholder="Sesso" type="text" value="">
+            <input class="taglia bio" name="attr_taglia" placeholder="Taglia" type="text" value="">
+            <input class="colori bio" name="attr_colori" placeholder="Colori" type="text" value="">
+        </div>
     </div>
 
     <div class="sheet-ability">
@@ -54,7 +58,6 @@
             <input class="agilità ability-temp-input" name="attr_agilità-temp" type="number" value="">
             <button class="agilità ability-button" name="roll_agilità" type="roll" value="&{template:default} {{name=Agilità}} {{personaggio=@{nome}}} {{Tiro=[[1d6+@{agilità}+@{agilità-temp}]]}}"></button>
         </div>
-
     </div>
 
     <div class="sheet-stats">
